@@ -7,7 +7,7 @@ import { spawnSync } from 'child_process';
 const distPath = fileURLToPath(new URL('.', import.meta.url).href);
 function adapter (options) {
   return {
-    name: 'sveltekit-adapter-firebase',
+    name: '@basjkorbee/sveltekit-adapter-firebase',
     adapt: function (builder) {
       return __awaiter(this, void 0, void 0, function* () {
         if ((options === null || options === void 0 ? void 0 : options.version) === 'v1' && (options === null || options === void 0 ? void 0 : options.functionOptions)) {
@@ -97,7 +97,8 @@ function generateProductionPackageJson({
   const firebaseConfig = {
     dependencies: Object.assign(Object.assign({}, packageJson === null || packageJson === void 0 ? void 0 : packageJson.dependencies), {
       'firebase-functions': '^4.4.1',
-      'devalue': '^4.3.2'
+      'devalue': '^4.3.2',
+      'set-cookie-parser': '^2.6.0'
     }),
     main: '.firebase/function/entrypoint.js',
     engines: {
