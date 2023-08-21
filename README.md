@@ -6,3 +6,4 @@ This is a fork of [simonnepomuk's adapter](https://github.com/simonnepomuk/monor
 
 - Added node 18 & 20 to the `nodeVersion` option.
 - Added some extra dependencies that seemed to be missing to the generated `package.json`
+- Fixed cors to not be stringified to '{}'

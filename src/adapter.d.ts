@@ -4,7 +4,7 @@ export declare type AdapterOptions = {
     outDir?: string;
     functionName?: string;
     version?: 'v1' | 'v2';
-    nodeVersion?: '14' | '16' | '18';
+    nodeVersion?: '14' | '16' | '18' | '20';
     functionOptions?: HttpsOptions;
 };
 export default function (options?: AdapterOptions): {
