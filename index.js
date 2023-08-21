@@ -82,7 +82,7 @@ function generateCloudFunction({
     });
     const initImport = `import { init } from './function.js';`;
     const firebaseImport = `import { onRequest } from 'firebase-functions/${version}/https';`;
-    const functionOptionsParam = functionOptions ? `${JSON.stringify(functionOptions)}, ` : '';
+    const functionOptionsParam = functionOptions ? `${JSON.stringify({ ...functionOptions, cors: functionOptions.cors.toString() })}, ` : '';
     const functionConst = `export const ${functionName} = onRequest(${functionOptionsParam}init(${manifest}));`;
     const entrypointFile = `${initImport}\n${firebaseImport}\n\n${functionConst}\n`;
     writeFileSync(join(outDir, '.firebase', 'function', 'entrypoint.js'), entrypointFile);
