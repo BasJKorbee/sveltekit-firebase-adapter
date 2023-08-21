@@ -18,11 +18,11 @@
 
 In your standard SvelteKit project:
 
-- `npm i -D sveltekit-adapter-firebase`
+- `npm i -D @basjkorbee/sveltekit-adapter-firebase`
 - add adapter to `svelte.config.js`:
 
 ```diff
-+import adapter from "sveltekit-adapter-firebase";
++import adapter from "@basjkorbee/sveltekit-adapter-firebase";
 
 /** @type {import('@sveltejs/kit').Config} */
 export default {
