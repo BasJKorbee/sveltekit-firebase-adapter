@@ -1,8 +1,0 @@
-{
-  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
-  "version": 2,
-  "projects": {
-    "e2e-sveltekit-adapter-firebase": "apps/e2e-sveltekit-adapter-firebase",
-    "sveltekit-adapter-firebase": "libs/sveltekit-adapter-firebase"
-  }
-}
