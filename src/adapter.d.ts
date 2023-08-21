@@ -6,6 +6,7 @@ export declare type AdapterOptions = {
     version?: 'v1' | 'v2';
     nodeVersion?: '14' | '16' | '18' | '20';
     functionOptions?: HttpsOptions;
+    autoInstallDeps?: boolean;
 };
 export default function (options?: AdapterOptions): {
     name: string;

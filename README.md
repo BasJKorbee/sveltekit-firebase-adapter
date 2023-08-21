@@ -4,6 +4,8 @@ This is a fork of [simonnepomuk's adapter](https://github.com/simonnepomuk/monor
 
 ## Changelog
 
-- Added node 18 & 20 to the `nodeVersion` option.
-- Added some extra dependencies that seemed to be missing to the generated `package.json`
-- Fixed cors to not be stringified to '{}'
+- feat: added node 18 & 20 to the `nodeVersion` option.
+- feat: added some extra dependencies that seemed to be missing to the generated `package.json`.
+- fix: cors being stringified to '{}'.
+- fix: install of dependencies in functions directory.
+- feat: add `autoInstallDeps` flag in options to be able to toggle off automatic install of dependencies in functions directory.
