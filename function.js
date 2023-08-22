@@ -17450,7 +17450,7 @@ function init(manifest) {
         duplex: 'half',
         method: req.method,
         headers: req.headers,
-        body: req.body
+        body: req.rawBody
       });
     } catch (err) {
       res.statusCode = err.status || 400;
